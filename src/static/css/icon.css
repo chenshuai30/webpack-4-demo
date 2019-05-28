@@ -1,0 +1,41 @@
+.aia-icon {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.aia-icon-16 {
+  width: 16px;
+  height: 16px;
+  background-size: 16px;
+}
+.aia-icon-12 {
+  width: 12px;
+  height: 12px;
+  background-size: 12px;
+}
+.aia-icon-text {
+  background: url('/assets/images/i16_text.png') center center no-repeat;
+}
+.aia-icon-bg {
+  background: url('/assets/images/i16_bg.png') center center no-repeat;
+}
+.aia-icon-component {
+  background: url('/assets/images/i16_component.png') center center no-repeat;
+}
+.aia-icon-effect {
+  background: url('/assets/images/i16_effect.png') center center no-repeat;
+}
+.aia-icon-form {
+  background: url('/assets/images/i16_form.png') center center no-repeat;
+}
+.aia-icon-music {
+  background: url('/assets/images/i16_music.png') center center no-repeat;
+}
+.aia-icon-pic {
+  background: url('/assets/images/i16_pic.png') center center no-repeat;
+}
+.aia-icon-shape {
+  background: url('/assets/images/i16_shape.png') center center no-repeat;
+}

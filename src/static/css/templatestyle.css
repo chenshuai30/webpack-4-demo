@@ -1,0 +1,265 @@
+#phoneContent body {
+  font-family: Helvetica;
+  background: #fff;
+}
+#phoneContent #app::-webkit-scrollbar {
+  display: none;
+}
+#phoneContent #app {
+  width: 100%;
+  height: 100%;
+}
+#phoneContent input {
+  text-align: left;
+}
+#phoneContent .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #921DC4;
+}
+#phoneContent .content .con-bg {
+  background: url('/assets/images//bg1.png') no-repeat;
+  background-size: 100% 100%;
+}
+#phoneContent .content .top {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+}
+#phoneContent .content .top img {
+  width: 80%;
+  height: 5rem;
+  position: absolute;
+  left: 50%;
+  top: 1.25rem;
+  transform: translateX(-50%);
+}
+#phoneContent .content .lottery {
+  width: 18.75rem;
+  margin: 0 auto;
+  height: 18.75rem;
+  position: relative;
+  background: url('/assets/images//lotterybg.png') no-repeat;
+  background-size: 100% 100%;
+}
+#phoneContent .content .lottery .opportunity {
+  position: absolute;
+  left: 50%;
+  font-size: 0.8125rem;
+  color: #B85101;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  transform: translateX(-50%);
+}
+#phoneContent .content .lottery .opportunity span {
+  margin: 0 0.25rem;
+  font-size: 1.125rem;
+  color: #7A1B92;
+}
+#phoneContent .content .lottery .con {
+  position: absolute;
+  left: 1.75rem;
+  top: 3.5625rem;
+  right: 1.75rem;
+  bottom: 3.3125rem;
+}
+#phoneContent .content .lottery .con .item {
+  width: 32%;
+  height: 32%;
+  background: url('/assets/images//normal.png') no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+#phoneContent .content .lottery .con .item:nth-of-type(3n) {
+  margin-right: 0%;
+}
+#phoneContent .content .lottery .con .item img {
+  width: 70%;
+  margin: 0.5rem auto 0.1875rem;
+}
+#phoneContent .content .lottery .con .item p {
+  font-size: 0.75rem;
+  color: #666;
+}
+#phoneContent .content .lottery .con .click {
+  background: url('/assets/images//click.png') no-repeat;
+  background-size: 100% 100%;
+}
+#phoneContent .content .lottery .con .itemMask {
+  background: url('/assets/images//checked.png') no-repeat;
+  background-size: 100% 100%;
+  transition: 0.1s;
+}
+#phoneContent .content .rule {
+  width: 18.75rem;
+  overflow: hidden;
+  margin: 1.25rem auto;
+}
+#phoneContent .content .rule .line {
+  text-align: center;
+  padding: 0.9375rem;
+  position: relative;
+}
+#phoneContent .content .rule .line img {
+  width: 9.375rem;
+  height: 2.5rem;
+}
+#phoneContent .content .rule .line p {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 0.9375rem;
+  transform: translateX(-50%);
+  height: 1.5625rem;
+  line-height: 1.5625rem;
+}
+#phoneContent .content .rule .rule-con {
+  padding: 0 0.9375rem 0.9375rem;
+}
+#phoneContent .content .rule .rule-con li {
+  color: #fff;
+  font-size: 0.6875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.3125rem;
+}
+#phoneContent .content .prize {
+  position: fixed;
+  bottom: 26%;
+  right: 2%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#phoneContent .content .prize img {
+  width: 60%;
+  height: 60%;
+}
+#phoneContent .mask-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  opacity: 0;
+  z-index: 2;
+}
+#phoneContent .mask-bg .mask {
+  margin: auto;
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+#phoneContent .mask-bg .mask img {
+  width: 12.5rem;
+  height: 6.25rem;
+  display: block;
+  margin-bottom: 0.9375rem;
+}
+#phoneContent .mask-bg .mask .mask-bot {
+  height: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#phoneContent .mask-bg .mask .mask-bot .p1 {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.125rem;
+}
+#phoneContent .mask-bg .mask .mask-bot .p2 {
+  color: #333;
+  font-size: 0.75rem;
+  margin-bottom: 0.9375rem;
+}
+#phoneContent .mask-bg .mask .mask-bot .ok {
+  font-size: 0.9375rem;
+  color: #FD6C59;
+  width: 6.25rem;
+  height: 1.5625rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5625rem;
+  border: 1px solid #FD6C59;
+  border-radius: 0.78125rem;
+}
+@media all and (min-width: 768px) {
+  #phoneContent #app .top {
+    height: 13.125rem;
+  }
+  #phoneContent #app .top img {
+    top: 1.875rem;
+    width: 80%;
+    height: 6.875rem;
+  }
+  #phoneContent #app .lottery {
+    width: 25rem;
+    margin: 1.875rem auto;
+    height: 25rem;
+    position: relative;
+  }
+  #phoneContent #app .lottery .con {
+    left: 2.1875rem;
+    top: 4.6875rem;
+    right: 2.1875rem;
+    bottom: 4.3125rem;
+  }
+  #phoneContent #app .rule {
+    width: 25rem;
+  }
+}
+@media all and (min-width: 1024px) {
+  #phoneContent #app .top {
+    height: 18.125rem;
+  }
+  #phoneContent #app .top img {
+    top: 2.5rem;
+    width: 80%;
+    height: 8.125rem;
+  }
+  #phoneContent #app .rule {
+    width: 25rem;
+  }
+}
+@media all and (min-width: 1125px) {
+  #phoneContent #app .top {
+    height: 10rem;
+  }
+  #phoneContent #app .top img {
+    top: 1.25rem;
+    width: 80%;
+    height: 5.625rem;
+  }
+  #phoneContent #app .lottery {
+    width: 18.75rem;
+    margin: 0 auto;
+    height: 18.75rem;
+    position: relative;
+  }
+  #phoneContent #app .lottery .con {
+    left: 1.75rem;
+    top: 3.5625rem;
+    right: 1.75rem;
+    bottom: 3.3125rem;
+  }
+  #phoneContent #app .rule {
+    width: 18.75rem;
+  }
+}
